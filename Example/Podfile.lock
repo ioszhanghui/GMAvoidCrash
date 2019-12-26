@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - GMAvoidCrash (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - GMAvoidCrash (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  GMAvoidCrash:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  GMAvoidCrash: ae7882069ba9b7cf9b8c74ccac5e45e20504fc02
+
+PODFILE CHECKSUM: 57eb15ab679fec3b7eae004f634783558aa3ef29
+
+COCOAPODS: 1.8.4

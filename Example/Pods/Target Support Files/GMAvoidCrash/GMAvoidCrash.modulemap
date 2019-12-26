@@ -1,0 +1,6 @@
+framework module GMAvoidCrash {
+  umbrella header "GMAvoidCrash-umbrella.h"
+
+  export *
+  module * { export * }
+}

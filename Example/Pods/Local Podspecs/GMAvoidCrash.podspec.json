@@ -1,0 +1,23 @@
+{
+  "name": "GMAvoidCrash",
+  "version": "0.1.0",
+  "summary": "防崩溃处理.",
+  "description": "常见的崩溃处理\n1.NSString\n2.NSMutableString\n3.NSArray\n4.NSMutableArray\n5.NSDictionary\n6.NSMutableDictionary\n7.NSMutableAttributeString\n8.@[]数组类型 @{}字典类型\n9.unrecognized selector crash",
+  "homepage": "https://github.com/ioszhanghui/GMAvoidCrash.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ioszhanghui@163.com": "yomingyo@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ioszhanghui/GMAvoidCrash.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "GMAvoidCrash/Classes/**/*"
+}

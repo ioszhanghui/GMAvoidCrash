@@ -1,0 +1,6 @@
+framework module Pods_GMAvoidCrash_Example {
+  umbrella header "Pods-GMAvoidCrash_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
