@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'GMAvoidCrash_Example' do
+  pod 'GMAvoidCrash', :path => '../'
+
+  target 'GMAvoidCrash_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
