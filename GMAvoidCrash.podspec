@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GMAvoidCrash'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = '防崩溃处理.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,9 @@ Pod::Spec.new do |s|
 7.NSMutableAttributeString
 8.@[]数组类型 @{}字典类型
 9.unrecognized selector crash
+10.KVC 防崩溃处理
                        DESC
+                       
 
   s.homepage         = 'https://github.com/ioszhanghui/GMAvoidCrash.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'

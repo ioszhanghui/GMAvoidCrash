@@ -7,6 +7,7 @@
 //
 
 #import "GMViewController.h"
+#import "GMCrashLoadManager.h"
 
 @interface GMViewController ()
 
@@ -17,7 +18,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [GMCrashLoadManager effectiveAvoidCrashMethod];
+    
+    NSObject * obj = [NSObject new];
+    NSLog(@"%@",[obj valueForKey:@"name"]);
+    [obj setValue:@"2" forKey:@"name"];
+
 }
 
 - (void)didReceiveMemoryWarning

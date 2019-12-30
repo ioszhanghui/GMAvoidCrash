@@ -31,8 +31,22 @@ FOUNDATION_STATIC_INLINE void crasHandler(id self,SEL _cmd){
         #pragma clang diagnostic push
         #pragma clang diagnostic ignored "-Wundeclared-selector"
         [self swizzleInstanceMethod:@selector(forwardingTargetForSelector:) SwizzleSel:@selector(gm_forwardingTargetForSelector:)];
+        
+        /*KVC 防崩溃 处理*/
+        [self swizzleInstanceMethod:@selector(valueForUndefinedKey:) SwizzleSel:@selector(gm_valueForUndefinedKey:)];
+        [self swizzleInstanceMethod:@selector(setValue:forUndefinedKey:) SwizzleSel:@selector(setgm_Value:forUndefinedKey:)];
+        
         #pragma clang diagnostic pop
     });
+}
+
+-(void)setValue:(id)value forUndefinedKey:(NSString *)key{
+    NSLog(@"value:----%@---key:---%@",value,key);
+}
+
+-(id)gm_valueForUndefinedKey:(NSString *)key{
+    
+    return nil;
 }
 
 -(id)gm_forwardingTargetForSelector:(SEL)aSelector{

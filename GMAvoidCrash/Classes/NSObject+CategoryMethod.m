@@ -129,7 +129,8 @@
     
     __weak typeof(self) weakSelf = self;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        [strongSelf performSelector:aSelector afterDelay:delay argument:arg, nil];
     });
 }
 
@@ -151,7 +152,6 @@
     }
     va_end(args);
     [invocation invoke];
-
 }
 
 @end
